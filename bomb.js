@@ -29,11 +29,11 @@ timerID = setInterval(countDown, 100);
 //loadBomb ()
 //  generate wires, and random assign liveWire
 
-// cut wire ()
-//if cut wire !== liveWire
-//change image to relevant cutwire
-//else
-//load exploded div
+cut wire ()
+if cut wire !== liveWire
+change image to relevant cutwire
+else
+load exploded div
 
 //reset.click(setGame)
 

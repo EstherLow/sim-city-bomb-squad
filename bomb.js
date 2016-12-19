@@ -12,28 +12,28 @@ document.addEventListener("DOMContentLoaded", function() {
 //update timer so that it runs every milisecond
 function countDown() {
   mSeconds = mSeconds - 0.1
-  $(".timer").html('0:00:'+ mSeconds);
-  console.log(mSeconds);
+  $(".timer").html('0:00:'+ mSeconds.toFixed(3));
+  return mSeconds;
 }
 
 function startGame () {
 timerID = setInterval(countDown, 100);
+if (mSeconds == 0) {
+  console.log("time's up!");
+  clearInterval = (timerID);
+  }
 }
 
 //startGame()
 
-// seconds = seconds + 1;
-// $('#timer').html('Time Elapsed: ' + seconds);
-// console.log(seconds);
-
 //loadBomb ()
 //  generate wires, and random assign liveWire
 
-cut wire ()
-if cut wire !== liveWire
-change image to relevant cutwire
-else
-load exploded div
+// cut wire ()
+// if cut wire !== liveWire
+// change image to relevant cutwire
+// else
+// load exploded div
 
 //reset.click(setGame)
 

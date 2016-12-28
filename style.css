@@ -12,8 +12,8 @@
 
 .bomb {
   position: absolute;
-  width: 200px;
-  height: 300px;
+  width: 133px;
+  height: 350px;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -31,10 +31,13 @@ line-height: 50px;
 text-align: center;;
 }
 
-.wires {
+.wire-wrap {
   width: 99%;
-  height: 210px;
+  height: 253px;
   border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .reset {
@@ -47,6 +50,7 @@ text-align: center;;
   width: 100%;
   height: 600px;
   background-image: url(../sim-city-bomb-squad/img/explosion.jpg);
+  background-size: 100%;
   visibility: hidden;
   display: flex;
 }
